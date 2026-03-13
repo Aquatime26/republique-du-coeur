@@ -5,7 +5,7 @@ interface CoupleSummaryProps {
   description: string
 }
 
-export function CoupleSummary({ city, anniversary, interests, description }: CoupleSummaryProps) {
+export default function CoupleSummary({ city, anniversary, interests, description }: CoupleSummaryProps) {
   return (
     <div className="p-4 bg-white rounded-lg shadow">
       <p><strong>Ville :</strong> {city}</p>

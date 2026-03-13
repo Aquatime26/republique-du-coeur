@@ -6,7 +6,7 @@ interface BannerProps {
   isOwner?: boolean
 }
 
-export function Banner({ bannerUrl, coupleName }: BannerProps) {
+export default function Banner({ bannerUrl, coupleName }: BannerProps) {
   return (
     <div className="relative h-48 w-full bg-gray-200 rounded-lg overflow-hidden">
       {bannerUrl && (

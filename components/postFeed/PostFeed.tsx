@@ -1,4 +1,4 @@
-import { PostCard } from "./PostCard"
+import PostCard from "./PostCard"
 
 interface PostFeedProps {
   posts: {
@@ -11,7 +11,7 @@ interface PostFeedProps {
   }[]
 }
 
-export function PostFeed({ posts }: PostFeedProps) {
+export default function PostFeed({ posts }: PostFeedProps) {
   return (
     <div className="mt-4">
       {posts.map(post => (

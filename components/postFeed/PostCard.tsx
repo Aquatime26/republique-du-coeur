@@ -6,7 +6,7 @@ interface PostCardProps {
   mediaType?: "image" | "video"
 }
 
-export function PostCard({ author, date, content, mediaUrl, mediaType }: PostCardProps) {
+export default function PostCard({ author, date, content, mediaUrl, mediaType }: PostCardProps) {
   return (
     <div className="p-4 bg-white rounded-lg shadow mb-4">
       <p className="text-gray-600">{author} • {date}</p>
